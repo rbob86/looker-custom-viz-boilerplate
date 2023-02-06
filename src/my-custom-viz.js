@@ -40,7 +40,6 @@ looker.plugins.visualizations.add({
 
   create: function (element, config) {
     css.use()
-
     element.innerHTML = `
       <div class="top-bar">
         <button id="drill-field-example"></button>
@@ -49,7 +48,6 @@ looker.plugins.visualizations.add({
       </div>
       <div id="viz-container"></div>
     `
-
     // Register new option on click
     document.getElementById('register-option').onclick = () => {
       this.trigger('registerOptions', {
